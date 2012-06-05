@@ -1,0 +1,12 @@
+{
+  "name": "basic-auth-parser",
+  "author": "Maciej Małecki <me@mmalecki.com>",
+  "version": "0.0.0",
+  "main": "./lib/basic-auth-parser.js",
+  "devDependencies": {
+    "vows": "0.6.x"
+  },
+  "scripts": {
+    "test": "vows --spec"
+  }
+}
