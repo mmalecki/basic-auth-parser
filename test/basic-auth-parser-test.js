@@ -21,6 +21,16 @@ vows.describe('basic-auth-parser').addBatch({
           scheme: 'Digest'
         });
       }
+    },
+    'with a correct string and a colon in password': {
+      topic: basicAuthParser('Basic YWRtaW46cGFzczp3b3Jk'),
+      'it should return parsed data': function (result) {
+        assert.deepEqual(result, {
+          scheme: 'Basic',
+          username: 'admin',
+          password: 'pass:word'
+        });
+      }
     }
   }
 }).export(module);
