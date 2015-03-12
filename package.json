@@ -5,7 +5,7 @@
   "version": "0.0.2",
   "main": "./lib/basic-auth-parser.js",
   "devDependencies": {
-    "vows": "0.6.x"
+    "vows": "0.8.x"
   },
   "scripts": {
     "test": "vows --spec"
