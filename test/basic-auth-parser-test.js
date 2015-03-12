@@ -18,7 +18,8 @@ vows.describe('basic-auth-parser').addBatch({
       topic: basicAuthParser('Digest DEADC0FFEE'),
       'it should return parsed data': function (result) {
         assert.deepEqual(result, {
-          scheme: 'Digest'
+          scheme: 'Digest',
+          credentials: "DEADC0FFEE"
         });
       }
     },
