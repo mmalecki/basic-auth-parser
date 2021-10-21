@@ -8,10 +8,7 @@
     "url": "https://github.com/mmalecki/basic-auth-parser.git"
   },
   "main": "./lib/basic-auth-parser.js",
-  "devDependencies": {
-    "vows": "0.6.x"
-  },
   "scripts": {
-    "test": "vows --spec"
+    "test": "node test/basic-auth-parser-test.js"
   }
 }
